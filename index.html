@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Página Inicial | MataNego</title>
 </head>
-<body>
-    <div class="d-flex ">
-        Página Inicial do MataNego
-    </div>
+<style>
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: "Cinzel";
+        white-space: nowrap;
+        color: rgb(255, 90, 90);
+        display: inline-block;
+        margin: 0 0.8rem;
+        transition: transform 0.5s ease-in-out, color 0.2s;
+        
+    }
 
+    a:hover { color: rgb(255, 150, 150); animation: rock-word 0.2s ease-in-out 1 forwards; }
+    body { background: linear-gradient(to bottom, #131212, rgb(255, 47, 47)); background-size: 100% 500%; }
+
+    @keyframes rock-word { 
+        0%   { transform: rotate(0deg); }
+        30%  { transform: rotate(-6deg); }
+        70%  { transform: rotate(6deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center align-items-center">
+            <div class="col-12 col-md-4"> 
+                <a href="#Home"> Home </a>
+                <a href="#Sobre"> Sobre </a>
+                <a href="#Detalhes"> Detalhes</a>
+            </div>        
+    
+            <div class="col-12 col-md-4">
+                <img src="imagens/logotipo.png" alt="Logotipo" class="w-50 rounded-circle m-2">
+            </div>
+    
+            <div class="col-12 col-md-4"> 
+                <a href="#Agendar"> Agendar </a>
+                <a href="#Contatos"> Contatos </a>
+                <a href="#Perfil"> Perfil </a>
+            </div>        
+        </div>
+    </div>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
